@@ -1,0 +1,31 @@
+{
+	"name": "tencentcloud-sms-examples",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/b6db07d1a5/tencentcloud-sms-examples.git",
+	"author": "Ananass <sitthichai@tencent.co.th>",
+	"license": "MIT",
+	"scripts": {
+		"build": "npx babel src -d ./build/ --source-maps inline",
+		"start": "npm run build && node ./build/server.js",
+		"dev": "nodemon --require @babel/register src/server.js"
+	},
+	"dependencies": {
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.5.5",
+		"@babel/core": "^7.5.5",
+		"@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+		"@babel/plugin-transform-runtime": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"@babel/register": "^7.5.5",
+		"@babel/runtime": "^7.5.5",
+		"babel-eslint": "^10.0.2",
+		"eslint": "^6.1.0",
+		"eslint-config-prettier": "^6.0.0",
+		"eslint-plugin-prettier": "^3.1.0",
+		"nodemon": "^1.19.1",
+		"prettier": "^1.18.2"
+	}
+}
