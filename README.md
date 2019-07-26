@@ -17,7 +17,7 @@ yarn
 
 
 ```
-localhost/send/single
+localhost:3000/send/single
 ```
 
 example request body
@@ -31,7 +31,7 @@ example request body
 ## Send bulk message POST request
 
 ```
-localhost/send/bulk
+localhost:3000/send/bulk
 ```
 
 example request body
