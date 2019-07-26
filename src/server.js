@@ -47,6 +47,7 @@ app.post('/send/single', async (req, res) => {
     {
       sig,
       time,
+      senderid: 'TCsms',
       tpl_id: 381175,
       params: ['1234', '4'],
       sign: 'Tencent Cloud',
@@ -88,6 +89,7 @@ app.post('/send/bulk', async (req, res) => {
       sig,
       time,
       tel,
+      senderid: 'TCsms',
       tpl_id: 381175,
       sign: 'Tencent Cloud TH',
       params: ['1234', '4'],
