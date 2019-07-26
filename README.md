@@ -1,6 +1,6 @@
 # Tencentcloud SMS examples
 
-# Installing
+## Installing
 
 Using npm:
 ```
@@ -9,6 +9,17 @@ npm install
 Using yarn:
 ```
 yarn
+```
+
+## develop
+
+```
+yarn dev
+```
+
+## build
+```
+yarn start
 ```
 
 ## Example
