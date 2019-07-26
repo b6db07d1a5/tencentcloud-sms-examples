@@ -1,4 +1,49 @@
-# tencentcloud-sms-examples
-tencentcloud-sms-examples
+# Tencentcloud SMS examples
 
-sms callback
+# Installing
+
+Using npm:
+```
+npm install
+```
+Using yarn:
+```
+yarn
+```
+
+## Example
+
+### Send single message POST request
+
+
+```
+localhost/send/single
+```
+
+example request body
+
+```json
+{
+	"mobile": "957529XXX"
+}
+```
+
+## Send bulk message POST request
+
+```
+localhost/send/bulk
+```
+
+example request body
+
+```json
+{
+	"mobile": ["957529XXX", "957529XXX"]
+}
+```
+
+## Current message template
+
+> verification code is {1} (valid for {2} minutes). For account safety, don't forward the code to others.
+
+```{1} {2} are parameters```
