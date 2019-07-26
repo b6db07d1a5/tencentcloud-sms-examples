@@ -18,6 +18,8 @@ app.use(
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
+app.post('/send', (req, res) => {})
+
 app.post('/callback', (req, res) => {
   console.log(JSON.stringify(req.body))
 
