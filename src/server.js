@@ -99,10 +99,8 @@ app.post('/send/bulk', async (req, res) => {
   res.json(smsResult.data)
 })
 
-app.post('/callback', (req, res) => {
+app.post('/smscallback', (req, res) => {
   console.log(JSON.stringify(req.body))
-
-  res.json(req.body)
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
