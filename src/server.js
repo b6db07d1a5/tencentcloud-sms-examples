@@ -10,6 +10,9 @@ import * as utils from './utilities'
 const app = express()
 const port = 3000
 
+const appId = process.env.APP_ID
+const appKey = process.env.APP_KEY
+
 const smsUrl = 'https://yun.tim.qq.com/v5/tlssmssvr/sendsms?'
 
 app.use(
@@ -31,7 +34,7 @@ app.post('/send/single', async (req, res) => {
   const time = new Date().getTime()
 
   const sig = utils.sig({
-    appkey: 'xxx',
+    appKey,
     random,
     time,
     mobile: 'xxx'

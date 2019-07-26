@@ -1,7 +1,7 @@
 import crypto from 'crypto'
 
-export function sig({ appkey, random, time, mobile }) {
-  const strSig = `appkey=${appkey}&random=${random}&time=${time}&mobile=${mobile}`
+export function sig({ appKey, random, time, mobile }) {
+  const strSig = `appkey=${appKey}&random=${random}&time=${time}&mobile=${mobile}`
 
   return crypto
     .createHash('sha256')
